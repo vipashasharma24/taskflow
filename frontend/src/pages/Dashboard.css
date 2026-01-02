@@ -1,0 +1,72 @@
+/* src/pages/Dashboard.css */
+
+.dashboard-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logout-btn {
+  float: right;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-task,
+.search-task {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.add-task input,
+.search-task input {
+  flex: 1;
+  padding: 6px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.add-task button,
+.task-list button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  margin: 6px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.task-list li.completed span:first-child {
+  text-decoration: line-through;
+  color: green;
+}
+
+.task-list li.pending span:first-child {
+  color: black;
+}
